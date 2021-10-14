@@ -48,5 +48,5 @@ We build a 4 inputs model, where for each time_id
 We then concatenate these four networks together and output a single number (the target we predict). 
 
 ### Model Evaluation
-The metric function is MSE. A model with only input3 (simple linear regression) can achieve average R2 score of around 0.7. Model with input1, input2 and input3 can achieve R2 score around 0.8, and model with input1-input4 can further improve the result to around 0.85 (see [here](https://github.com/taosongst/OPTIVER-REALIZED-VOLATILITY-PREDICTION/blob/main/4_inputs_results.csv)).
+The metric function is MSE. A model with only input3 (simple linear regression) can achieve average R2 score of around 0.73(see [here](https://github.com/taosongst/OPTIVER-REALIZED-VOLATILITY-PREDICTION/blob/main/LinearRegressionResults.csv)). Model with input1, input2 and input3 can achieve R2 score around 0.8, and model with input1-input4 can further improve the result to around 0.85 (see [here](https://github.com/taosongst/OPTIVER-REALIZED-VOLATILITY-PREDICTION/blob/main/4_inputs_results.csv)).
 
