@@ -8,10 +8,10 @@ The goal is to predict the realized volatility of the next 10 minutes given the 
 ### Structure of the project
 - We use numpy/pandas/tensorflow when preprocessing these data. See [here](https://github.com/taosongst/OPTIVER-REALIZED-VOLATILITY-PREDICTION/blob/main/DataProcessing.py). 
 - We will add a version of data preprocessing using pyspark.  
-- We first test our model using linear regression with cross validation. See [here](https://github.com/taosongst/OPTIVER-REALIZED-VOLATILITY-PREDICTION/blob/main/BestLinearRegression.py)
-- The best model we have so far is described in below and can be seen [here](https://github.com/taosongst/OPTIVER-REALIZED-VOLATILITY-PREDICTION/blob/main/TestGlobalAndLinear.py)
+- We first test our model using linear regression with cross validation. See [here](https://github.com/taosongst/OPTIVER-REALIZED-VOLATILITY-PREDICTION/blob/main/BestLinearRegression.py) for code and [here](https://github.com/taosongst/OPTIVER-REALIZED-VOLATILITY-PREDICTION/blob/main/LinearRegressionResults.csv) for results. 
+- The best model we have so far is described in below and can be seen [here](https://github.com/taosongst/OPTIVER-REALIZED-VOLATILITY-PREDICTION/blob/main/TestGlobalAndLinear.py), also see [here](https://github.com/taosongst/OPTIVER-REALIZED-VOLATILITY-PREDICTION/blob/main/4_inputs_results.csv) for results.
 - We use automated hyperparameter tuning techniques provided by tensorboard.plugins.hparams, see [here](https://github.com/taosongst/OPTIVER-REALIZED-VOLATILITY-PREDICTION/blob/main/hyperparametersTuning.py).
-- We also add some experiment with detecting market abnormality using both linear model and cnn model. See the end of [here](https://github.com/taosongst/OPTIVER-REALIZED-VOLATILITY-PREDICTION/blob/main/TestGlobalAndLinear.py).
+- We also add some experiment with detecting market abnormality using both linear model and cnn model. See the end of [here](https://github.com/taosongst/OPTIVER-REALIZED-VOLATILITY-PREDICTION/blob/main/TestGlobalAndLinear.py). The hope is that by adding these abnormality detection we can split our data into 'normal' and 'abnormal', and build a model for each. We only notice slight improvement using this method, but it seems interesting. 
 
 ### Data
 We are given the book data and trade data of over 100 stocks, a total 3GB size. 
