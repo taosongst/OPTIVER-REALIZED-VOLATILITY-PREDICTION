@@ -10,7 +10,7 @@ The goal is to predict the realized volatility of the next 10 minutes given the 
 - We will add a version of data preprocessing using pyspark.  
 - We first test our model using linear regression with cross validation. See [here](https://github.com/taosongst/OPTIVER-REALIZED-VOLATILITY-PREDICTION/blob/main/BestLinearRegression.py)
 - The best model we have so far is described in below and can be seen [here](https://github.com/taosongst/OPTIVER-REALIZED-VOLATILITY-PREDICTION/blob/main/TestGlobalAndLinear.py)
-- We use automated hyperparameter tuning techniques, see [here](https://github.com/taosongst/OPTIVER-REALIZED-VOLATILITY-PREDICTION/blob/main/hyperparametersTuning.py).
+- We use automated hyperparameter tuning techniques provided by tensorboard.plugins.hparams, see [here](https://github.com/taosongst/OPTIVER-REALIZED-VOLATILITY-PREDICTION/blob/main/hyperparametersTuning.py).
 - We also add some experiment with detecting market abnormality using both linear model and cnn model. See the end of [here](https://github.com/taosongst/OPTIVER-REALIZED-VOLATILITY-PREDICTION/blob/main/TestGlobalAndLinear.py).
 
 ### Data
