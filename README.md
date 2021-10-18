@@ -7,7 +7,7 @@ The goal is to predict the realized volatility of the next 10 minutes given the 
 
 ### Structure of the project
 - We use numpy/pandas/tensorflow when preprocessing these data. See [here](https://github.com/taosongst/OPTIVER-REALIZED-VOLATILITY-PREDICTION/blob/main/DataProcessing.py). 
-- We will add a version of data preprocessing using pyspark.  
+<!-- - We will add a version of data preprocessing using pyspark.   -->
 - We first test our model using linear regression with cross validation. See [here](https://github.com/taosongst/OPTIVER-REALIZED-VOLATILITY-PREDICTION/blob/main/BestLinearRegression.py) for code and [here](https://github.com/taosongst/OPTIVER-REALIZED-VOLATILITY-PREDICTION/blob/main/LinearRegressionResults.csv) for results. 
 - The best model we have so far is described in below and can be seen [here](https://github.com/taosongst/OPTIVER-REALIZED-VOLATILITY-PREDICTION/blob/main/TestGlobalAndLinear.py), also see [here](https://github.com/taosongst/OPTIVER-REALIZED-VOLATILITY-PREDICTION/blob/main/4_inputs_results.csv) for results.
 - We use automated hyperparameter tuning techniques provided by tensorboard.plugins.hparams, see [here](https://github.com/taosongst/OPTIVER-REALIZED-VOLATILITY-PREDICTION/blob/main/hyperparametersTuning.py).
